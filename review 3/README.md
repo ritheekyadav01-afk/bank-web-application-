@@ -27,6 +27,16 @@ Open <http://localhost:3000>.
 
 **Edit `.env` yourself** (`DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`, `PORT`, `JWT_SECRET`). Never paste passwords into chat or commit `.env`.
 
+## Run it online with GitHub Codespaces (no installs)
+
+1. On the repository page, click **Code, Codespaces, Create codespace on main**.
+2. Wait a few minutes. The first start builds MySQL, loads `bank_review2.sql`, writes `.env` and starts the app.
+3. Open the **Ports** tab, find port **3000**, and open it in the browser.
+4. To share the link: right-click port 3000, choose **Port Visibility, Public**, and copy the address.
+
+The app only runs while the Codespace is running (it stops itself after a period of inactivity). Restart it from the
+Codespaces page, or run `cd "review 3" && npm start` in the Codespace terminal. See `.devcontainer/` for the setup.
+
 ## Demo staff logins
 
 The SQL file has no login table, so the app creates a `staff_user` table in `bank_db` on first start
