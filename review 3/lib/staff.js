@@ -16,8 +16,8 @@ const DDL = `CREATE TABLE IF NOT EXISTS staff_user (
 
 // Demo staff for a local classroom install. Change these passwords (or run `npm run seed:staff`) for anything real.
 const DEMO_STAFF = [
-  { username: 'teller',  full_name: 'Teena Rao',    role: 'TELLER',       password: 'Teller@123' },
-  { username: 'loans',   full_name: 'Lokesh Varma', role: 'LOAN_OFFICER', password: 'Loans@123' },
+  { username: 'teller',  full_name: 'Ritheek Yadav', role: 'TELLER',       password: 'Teller@123' },
+  { username: 'loans',   full_name: 'Deekshan Raj', role: 'LOAN_OFFICER', password: 'Loans@123' },
   { username: 'manager', full_name: 'Sri Lakshmi',   role: 'MANAGER',      password: 'Manager@123' },
 ];
 
