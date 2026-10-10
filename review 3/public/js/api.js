@@ -7,6 +7,16 @@ let onUnauthorized = () => {};
 export const setUnauthorizedHandler = (fn) => { onUnauthorized = fn; };
 
 async function request(method, url, body) {
+  if (window.__DEMO__) {
+    // GitHub Pages demo: the same API answered inside the page (see demo.js); never set on the real server.
+    const { demoRequest } = await import('./demo.js');
+    try {
+      return await demoRequest(method, url, body);
+    } catch (err) {
+      if (err.status === 401 && !url.startsWith('/auth/login')) onUnauthorized();
+      throw err;
+    }
+  }
   let res;
   try {
     res = await fetch('/api' + url, {
