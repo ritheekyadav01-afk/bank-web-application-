@@ -1,6 +1,6 @@
 # Woxsen Co-operative Bank — Bank Account and Transaction Management System
 
-**Live demo:** [Open the app in GitHub Codespaces](https://codespaces.new/ritheekyadav01-afk/bank-web-application-?quickstart=1) (starts the app and database for you; see [Run it online](#run-it-online-with-github-codespaces-no-installs) below).
+**Live demo:** <https://ritheekyadav01-afk.github.io/bank-web-application-/> (runs entirely in your browser with the sample data; changes are not saved and reset when you reload). For the real Node + MySQL version, see [Run it online with GitHub Codespaces](#run-it-online-with-github-codespaces-no-installs) below.
 
 DBMS course project: a Node.js + Express + MySQL 8 back end and a plain HTML/CSS/JS front end (no build step, no CDN).
 `bank_review2.sql` is used **unchanged** as the schema. Every business rule (positive amounts, sufficient balance,
@@ -25,7 +25,7 @@ cp .env.example .env
 npm start
 ```
 
-Open <http://localhost:3000> (this address works only on the computer running the app; to use it online, see the live demo link above).
+Open the live demo: <https://ritheekyadav01-afk.github.io/bank-web-application-/>
 
 **Edit `.env` yourself** (`DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`, `PORT`, `JWT_SECRET`). Never paste passwords into chat or commit `.env`.
 
